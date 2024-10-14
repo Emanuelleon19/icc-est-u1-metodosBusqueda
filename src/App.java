@@ -12,14 +12,17 @@ public class App {
         }
 
         //metodosBusqueda.printArreglo(arreglo);
-        long startTimeBinaria = System.nanoTime ();
+        long startTimeBinaria = System.nanoTime();
         int posicion = metodosBusqueda.busquedaSecuencial(arreglo, 50418);
-        long endTimeBinaria = System.nanoTime ();
+        long endTimeBinaria = System.nanoTime();
         System.out.println("Tiempo de ejecucion: " + (endTimeBinaria - startTimeBinaria) + " nanosegundos");
         if(posicion != -1){
             System.out.println("El valor se encuentra en la posicion : " + posicion);
+            System.out.println("El numero de iteraciones es: " + posicion+1);
+
         }else
         System.out.println("valor no encontrado 404");
+        System.out.println("");
         
 
         // BUSQUEDA BINARIA
@@ -31,9 +34,9 @@ public class App {
         }
 
         //metodosBusqueda.printArreglo2(arr);
-        long startTimeBinaria2 = System.nanoTime ();
+        long startTimeBinaria2 = System.nanoTime();
         int posicion2 = metodosBusqueda.busquedaBinaria(arr, 50418);
-        long endTimeBinaria2 = System.nanoTime ();
+        long endTimeBinaria2 = System.nanoTime();
         System.out.println("Tiempo de ejecucion: " + (endTimeBinaria2 - startTimeBinaria2) + " nanosegundos");
 
         if(posicion2 != -1){

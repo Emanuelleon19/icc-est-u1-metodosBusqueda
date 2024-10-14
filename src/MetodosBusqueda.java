@@ -16,12 +16,14 @@ public class MetodosBusqueda {
     public int busquedaBinaria(int[] arr, int value){
         int inicio = 0;
         int fin = arr.length -1;
+        int contador = 1;
 
         while(inicio <= fin){
             int medio = inicio + (fin - inicio)/2;
 
             if(arr[medio] == value){
-                //elemento encontrado 
+                //elemento encontrado
+                System.out.println("El numero de iteraciones es: " + contador); 
                 return medio;
             }
 
@@ -30,8 +32,11 @@ public class MetodosBusqueda {
             }else{
                 fin = medio - 1; // buscar en la mitad de la derecha
             }
+            contador++;
         }
+        System.out.println("El numero de iteraciones es: " + contador); 
         return -1;
+
     }
     public void printArreglo2(int[] arr){
         for (int elemento : arr){
