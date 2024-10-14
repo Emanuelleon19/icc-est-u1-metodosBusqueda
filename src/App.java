@@ -18,7 +18,7 @@ public class App {
         System.out.println("Tiempo de ejecucion: " + (endTimeBinaria - startTimeBinaria) + " nanosegundos");
         if(posicion != -1){
             System.out.println("El valor se encuentra en la posicion : " + posicion);
-            System.out.println("El numero de iteraciones es: " + posicion+1);
+            System.out.println("El numero de iteraciones es: " + (posicion + 1));
 
         }else
         System.out.println("valor no encontrado 404");
